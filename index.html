@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://thumbs.dreamstime.com/b/amazon-logo-white-background-montreal-canada-july-printed-paper-98221126.jpg"
+        type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>amazon clone</title>
+</head>
+<style>
+    body {
+        background-color:#dee0df;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav {
+        background-color: rgb(12, 12, 17);
+        display: flex;
+        justify-content: space-between;
+        width: 1280px;
+        height: 50px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 100px;
+        transform: scaley(3);
+    }
+
+    .cart {
+        height: 50px;
+        width: 100px;
+        display: flex;
+        /* justify-content:space-between; */
+        /* background-color:deeppink; */
+    }
+
+    .cart img {
+        height: 50px;
+        width: 40px;
+    }
+
+    .cart .write span {
+        height: 50px;
+        width: 40px;
+        position: relative;
+        top: 10px;
+        padding: 3px;
+        font-size: larger;
+
+    }
+    .search {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+     .search_button .searchbutton{
+        width: 40px;
+        height: 38px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        top: 2px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* background-color: yellow; */
+
+
+
+    } 
+
+    .searchbar input {
+        padding: 5px 5px 5px 5px;
+        height: 20px;
+        width: 400px;
+        position: relative;
+        top: 5px;
+    }
+
+  
+
+     .search_button .searchbutton img {
+        width: 51px;
+        height: 28px;
+        padding: 5px 5px 5px 5px;
+        position: relative;
+        top: -1px;
+        left: 0px;
+
+        /* background-color: rgb(216, 216, 7); */
+         background-size:cover;
+    } 
+
+
+
+    .write span {
+        color: white;
+    }
+    /* ......................................................................................................starting with styling of section1 */
+.section-1-container{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    top:250px;
+    margin-left:20px;
+    margin-right:20px;
+    gap:10px;
+}
+.section-1-column-1{
+    background-color:white;
+    padding:10px;
+    height:400px;
+    width:23vw;
+}
+.section-1-column-1 img{
+    height:300px;
+    width:23vw;
+    /* padding:10px; */
+}
+.section-1-column-2{
+    background-color:white;
+    padding:10px;
+    height:400px;
+    width:23vw;
+}
+.section-1-column-3{
+    background-color:white;
+    /* padding:10px; */
+    height:419px;
+    width:23vw;
+    /* font-size:20px; */
+
+    
+}
+.section-1-column-3 p{
+    font-size:14px;
+}
+
+.section-1-column-4{
+    background-color:#dee0df;
+    /* padding:10px; */
+    height:400px;
+    width:23vw;
+}
+.section-1-column-2 img{
+    height:300px;
+    width:23vw;
+}
+ /* .section-1-column-3
+    {
+        height:100px;
+        width:25vw;
+        display:grid;
+        background-color:rgb(52, 14, 203);
+        grid-row-gap:10px;
+        grid-column-gap:10px;
+        grid-template-columns:auto auto;
+    }  */
+    .section-1-column-4-row-1{
+        background-color:white;
+        height:130px;
+        width:18vw;
+        justify-content: center;
+        align-items:center;
+        align-content:center;
+        padding:31px;
+        position:relative;
+        top:-17px;
+
+
+
+    }
+    button{
+        background-color:#edd035;
+        height:30px;
+        width:250px;
+        border-radius:8px;
+        margin-top:2px;
+        
+    }
+    .section-1-column-4-row-2{
+        background-color:rgb(35, 28, 171);
+        height:189px;
+        width:23vw;
+        justify-content: center;
+        align-items:center;
+        align-content:center;
+        
+
+    }
+.section-1-column-4-row-2 img{
+    height:226px;
+        width:23vw;
+}
+.section-1-column-3 img{
+    height:73px;
+    width:8vw;
+}
+.images{
+    padding:10px;
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto auto;
+    grid-row-gap:10px;
+    grid-column-gap:3px;
+}
+.item{
+    width:8vw;
+}
+.section1{
+    height:auto;
+    width:100%;
+    background:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/Mar/Apay/Rev1/Deals-PC-3000-Unrec._CB592487741_.jpg");
+    display:flex;
+    justify-content:center;
+    background-size:cover;
+    /* align-items:center; */
+    animation:slide 20s infinite;
+}
+@keyframes slide{
+    35%{
+        
+        height:auto;
+    width:100%;
+    background:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/Mar/Apay/Rev1/Deals-PC-3000-Unrec._CB592487741_.jpg");
+    display:flex;
+    justify-content:center;
+    background-size:cover;
+    }
+    70%{
+        height:auto;
+    width:100%;
+    
+    background:url("https://images-eu.ssl-images-amazon.com/images/G/31/saba/Summer_cooling_days_hero_3000_x_1200_Yellow._CB590558342_.jpg");
+    display:flex;
+    justify-content:center;
+    background-size:cover;
+    }
+    100%{
+        height:auto;
+    width:100%;
+    
+    background:url("https://m.media-amazon.com/images/I/71YEY+JRlKL._SX3000_.jpg");
+    display:flex;
+    justify-content:center;
+    background-size:cover;
+    }
+}
+
+/* .......................................................................................................................SECGTION 2 STARTS ........................................ */
+.section2{
+    background-color:white;
+    position:relative;
+    top:276px;
+    padding:20px;
+}
+.product-cards{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    flex-wrap:nowrap;
+    overflow:auto;
+}
+.product-card{
+/* display:inline-block; */
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:rgb(186, 61, 12);
+
+}
+.section2 .product-card img{
+    margin:20px;
+    height:auto;
+    width:auto;
+    max-width:280px;
+    max-height:150px;
+    position:relative;
+    right:12px;
+}
+.section2 .section-2-container .product-cards .product-card .redbg{
+    background-color:rgb(193, 19, 19);
+    color:white;
+    border-radius:2px;
+}
+.section2 .section-2-container .product-cards .product-card .deal{
+
+    color:red;
+    border-radius:2px;
+    font-size:10px;
+}
+/* ............................................................................................................................section 3............................................ */
+.section3{
+    background-color:white;
+    position:relative;
+    top:305px;
+    padding:20px;
+}
+.product-cards{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    flex-wrap:nowrap;
+    overflow:auto;
+}
+.product-card{
+display:inline-block;
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:white;
+
+}
+.section3 .product-card img{
+    margin:20px;
+    height:auto;
+    width:auto;
+    max-width:280px;
+    max-height:200px;
+    position:relative;
+    right:12px;
+}
+/* .............................section 4 starts........................................ */
+/* ..................................................................................... */
+.section4{
+    position:relative;
+    top:351px;
+    padding:0px 167px;
+}
+/* .........................................................................................................................section 5 starts........................................ */
+.section5{
+    background-color:white;
+    position:relative;
+    top:364px;
+    padding:20px;
+}
+.product-cards{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    flex-wrap:nowrap;
+    overflow:auto;
+}
+.product-card{
+display:inline-block;
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:white;
+
+}
+.section5 .product-card img{
+    margin:20px;
+    width:auto;
+    height:auto;/*always set height and width as auto to get correct aspect ratio or proportion of the image .set the value of maximum height and maximum width..not height and width*/
+    max-width:280px;
+    max-height:200px;
+    position:relative;
+    right:12px;
+}
+/* ........................................................................................................................section 6................................................ */
+.section6{
+    background-color:white;
+    position:relative;
+    top:419px;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+}
+.section6 .section-6-container .product-cards{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    flex-wrap:nowrap;
+    overflow:auto;
+
+}
+.section6 .section-6-container .product-card{
+    display:inline-block;
+    width:200px;
+    flex:0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    /* gap:4; */
+    align-items:center;
+}
+.section6 .section-6-container .product-cards .product-card .product-img img{
+width:100%;
+
+/* justify-content: center; */
+
+}
+.section6 .section-6-container .product-cards .product-card a{
+    text-decoration:none;
+    color:rgb(41, 144, 167);
+    font-size:15px;
+}
+.section6 .section-6-container .product-cards .product-card a:hover{
+    color:rgb(201, 68, 68);
+}
+.section6 .section-6-container .product-cards .product-card .delivery-by{
+    color:black;
+    font-size:12px;
+}
+/* .......................section 7 .................................................... */
+.section7 .section-7-container{
+background-color:white;
+position:relative;
+top:431px;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+padding:20px;
+
+}
+/* .............................footer.................................................. */
+/* footer{
+    width:100%;
+    background-color:rgb(4, 4, 32);
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top:450px;
+    color:white;
+
+
+
+} */
+footer{
+    display:flex;
+    flex-direction:column;
+position:relative;
+top:431px;
+}
+.footer-section-1{
+  width:100%;
+  height:50px;
+  background-color:rgb(40, 40, 65);
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footer-section-1:hover{
+    background-color:rgb(82, 87, 122);
+}
+.footer-section-2{
+    width:100%;
+    height:270px;
+    /* max-height:400px; */
+    display:flex;
+    gap:40px;
+    background-color:rgb(25, 25, 55);
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section-2 li{
+    font-size: 13px;
+    color:rgb(163, 163, 163);
+    text-decoration: none;
+}
+.footer-section-3{
+    width:100%;
+    background-color:rgb(17, 17, 34);
+    height:80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* position: relative;
+    top:450px; */
+    color:white;
+
+}
+.footer-section-2 .col{
+    width:235px;
+    height:215px;
+}
+.footer-section-2 h{
+    font-size:16px;
+}
+
+    </style>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="amazon logo.png" height="50px" width="50px">
+            </div>
+            <div class="search">
+                <div class="searchbar">
+                    <input type="text">
+                </div>
+                <div class="search_button">
+                    <button class="searchbutton">
+                        <img src="searchicon.png">
+                    </button>
+                    </div>
+                </div>
+            
+            <div class="cart">
+
+                <img src="cart.png">
+                <div class="write">
+                    <span>cart</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="section-1-container">
+            <div class="section-1-column-1">
+                <h1>Bluetooth calling smartwatch starts at..</h1>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_758X608_1._SY608_CB614835787_.jpg" height="100px"width="100px">
+                <span>shop now</span>
+            </div>
+            <!-- <div class="section-column-2">
+            <h1>shop and pay|earn rewards daily</h1>
+            <div class="section-1-column-2a">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_372X232_ScratchCard._SY232_CB627364751_.jpg">
+                <div class="section-1-column-2b">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_372X232_ScratchCard._SY232_CB627364751_.jpg">
+                    </div>
+                    <div class="section-1-column-2c">
+                        <img src="	https://images-eu.ssl-images-amazon.com/images/G/3…g17/APay/GWQC/PC_Pay__Win._SY232_CB616103432_.jpg">
+                        </div>
+                        <div class="section-1-column-2d">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/3…Pay/GWQC/PC_Shop__collect._SY232_CB616103432_.jpg
+                            ">
+                            
+
+                        </div>
+                        <span>see more</span>
+                    </div> -->
+                    <div class="section-1-column-2">
+                        <h1>up to 50% off|moniter blood sugar at home</h1>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Pharmacy/CC_high_3._SY608_CB592656736_.jpg">
+                        <span>visit the store</span>
+                    </div>
+                    <div class="section-1-column-3">
+                        <h1>starting 79rs|amazon brands and more<h1>
+                        <div class="images">
+                        <!-- <div class="section-1-column-3"> -->
+                        <img class="item"src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile2-kitchen_372x232_in-en._SY232_CB612501063_.jpg">
+                        <!-- </div> -->
+                        <!-- <div class="section-1-column-3"> -->
+                            <img class="item" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/home_379._SY232_CB592083129_.jpg">
+                          <p class="item"> starting Rs.149|choppers and more ..</p> 
+                          <p class="item">starting Rs.179|fairylight and more..</p> 
+                       
+                    <!-- </div> -->
+                    <!-- <div class="section-1-column-3"> -->
+                        <img class="item" src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/kitchen_379._SY232_CB592083129_.jpg">
+                        <!-- </div> -->
+                        <!-- <div class="section-1-column-3"> -->
+                            <img class="item" src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile4-home_372x232_in-en._SY232_CB612501081_.jpg">
+                            <p class="item">starting Rs.129|containers and more..</p>
+                            <p class="item">wall hangings and more..</p>
+                            <p>shop now</p>
+                    </div>
+
+                    </div>
+                    <div class="section-1-column-4">
+                        <div class="section-1-column-4-row-1">
+
+                        
+                        <h1>sign in for your best experience</h1>
+                        <br></br>
+                        <button class="sign-in">
+                            sign in securely
+                        </button>
+                    </div>
+                    <div class="section-1-column-4-row-2">
+                        
+                        <img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg">
+                        </div>
+                        
+
+                    </div>
+                    
+                </div>
+
+            
+
+            
+            </section>
+            <section class="section2">
+                <div class="section-2-container">
+            <h><b>Today's deal</b></h>
+            <div class="product-cards">
+                <div class="product-card">
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/419IdaXiS4L._AC_SY400_.jpg">
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/31cQxf0GUeL._AC_SY400_.jpg">
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61QQtY6qtHL._AC_SY400_.jpg">
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/31yQxnMLbKL._AC_SY400_.jpg">
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/31pj4-G749L._AC_SY400_.jpg">
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                  <img src="https://m.media-amazon.com/images/I/31T3mGAZLML._AC_SY400_.jpg">  
+                  <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/31Oyr6W4rJL._AC_SY200_.jpg">  
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/41wN8UcVDuL._AC_SY200_.jpg">  
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/31m31tZyhGL._AC_SY200_.jpg">  
+                    <span class="redbg">upto 82% off</span><br><span class="deal">Deal of the day !!</span>
+                  </div>
+            </div>
+
+                </div>
+            </section>
+            <!-- ............................................................................................................................................. -->
+            <section class="section3">
+                <div class="section-3-container">
+            <h><b>Up to 70% off | Shoes, watches & more</b></h>
+            <div class="product-cards">
+                <div class="product-card">
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61klNXLzIRL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61kkBn6ofAL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71JS7mbe8RL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71MXBWGALUL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71viRsrDPaL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                  <img src="https://m.media-amazon.com/images/I/81UaMFQR6kL._AC_SY200_.jpg">  
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81YAWhOArBL._AC_SY200_.jpg">  
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71fiPZD9naL._AC_SY200_.jpg">  
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81Pk4RiSKqL._AC_SY200_.jpg">  
+                  </div>
+            </div>
+
+                </div>
+            </section>
+            <!-- ...............section 4.............................................. -->
+            <section class="section4">
+                <img src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg">s
+            </section>
+            <!-- .................section 5............................................ -->
+            <section class="section5">
+                <div class="section-5-container">
+            <h><b>Best Sellers in Grocery & Gourmet Foods</b></h>
+            <div class="product-cards">
+                <div class="product-card">
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61WtLg9JCyL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/51TH5xE+2sL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/41lBuao0+bL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81Xzx5PHTFL._AC_SY200_.jpg">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61b2VUzbW0L._AC_SY400_.jpg">
+                </div>
+                <div class="product-card">
+                  <img src="https://m.media-amazon.com/images/I/51dWUMCgQzL._AC_SY200_.jpg">  
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71NANIn2jhL._AC_SY200_.jpg">  
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71foBxdA7tL._AC_SY200_.jpg">  
+                  </div>
+                  <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71sUJfpTVpL._AC_SY400_.jpg">  
+                  </div>
+            </div>
+
+                </div>
+            </section>
+            <!-- ..........................section 6................................... -->
+<section class="section6">
+    <div class="section-6-container">
+        <h1>Skin Care and Cosmetics</h1>
+        <div class="product-cards">
+            <div class="product-card">
+                <div class="product-img">
+<img src="https://images-eu.ssl-images-amazon.com/images/I/51H1dx3ULHL._AC_UL320_SR320,320_.jpg">
+</div>
+<a href="./product1.html">Mamaearth Vitamin C Daily Glow Face Cream With Vitamin C & Turmeric For Skin Illumination - 80 G</a>
+<p>
+    <strong>Rs.223.00</strong>
+</p>
+    <p class="delivery-by">get it by <b>friday,April 21st</b></p>   
+</div>
+<div class="product-card">
+<div class="product-img">
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/51SdN7wdGoL._AC_UL320_SR320,320_.jpg">
+</div>
+    <a href="./product2.html">Mamaearth Skin Illuminate Face Cream, For Skin Brightening, With Vitamin C And Turmeric For Radiant Skin 80 G</a>
+    <p>
+    <strong>Rs.250.00</strong>
+</p>
+    <p class="delivery-by">get it by <b>friday,April 21st</b></p> 
+</div>
+<div class="product-card">
+    <div class="product-img">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/51P6lnB9z7L._AC_UL320_SR320,320_.jpg">
+    </div>
+        <a href="./product3.html">Lakme Absolute Perfect Radiance Brightening Day Cream 50 g, SPF 30, Daily Illuminating Face Moisturizer for Glowing Skin - With Glycerin & Niacinamide</a>
+    
+        <p>
+            <strong>Rs.260.00</strong>
+        </p>
+            <p class="delivery-by">get it by <b>friday,April 21st</b></p>  
+        </div>
+        <div class="product-card">
+        <div class="product-img">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/51VIMoMDCnL._AC_UL320_SR320,320_.jpg"></div>
+            <a href="./product4.html">Mamaearth Ubtan Facial Kit with Turmeric & Saffron for Glowing Skin - 60 g</a>
+            <p>
+                <strong>Rs.270.00</strong>
+            </p>
+                <p class="delivery-by">get it by <b>friday,April 21st</b></p>  
+</div>
+<div class="product-card">
+            <div class="product-img">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41XxDtN62bL._AC_UL160_SR160,160_.jpg"></div>
+                <a href="./product5.html">Mamaearth Nourishing Lip Balm Tinted 100% Natural with Vitamin E and Strawberry - 4 g</a>
+                <p>
+                    <strong>Rs.280.00</strong>
+                </p>
+                    <p class="delivery-by">get it by <b>friday,April 21st</b></p>  
+</div>
+<div class="product-card">
+                <div class="product-img">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/5188CuxYy3L._AC_UL320_SR320,320_.jpg"></div>
+                    <a href="./product6.html">Mamaearth Aloe Ashwagandha Gel, For Face, With Aloe Vera & Ashwagandha For A Youthful Glow - 300 Ml</a>
+                    <p>
+                        <strong>Rs.290.00</strong>
+                    </p>
+                        <p class="delivery-by">get it by <b>friday,April 21st</b></p>  
+</div>
+<div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/513BvsPOxkL._AC_UL320_SR320,320_.jpg"></div>
+                        <a href="./product7.html">Mamaearth Honey Malai Cold Cream With Honey & Malai For Nourishing Glow - 200 G</a>
+                        <p>
+                            <strong>Rs.300.00</strong>
+                        </p>
+                            <p class="delivery-by">get it by <b>friday,April 21st</b></p> </div> 
+                            <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/I/51k4V-vM5xL._AC_UL320_SR320,320_.jpg"></div>
+                            <a href="./product8.html">Lakme Blush & Glow Strawberry Refreshing Gel Face Wash 100 g, With 100% Natural Fruit for Glowing Skin - Daily Gentle Exfoliating Facial Cleanser</a>
+                            <p>
+                                <strong>Rs.310.00</strong>
+                            </p>
+                                <p class="delivery-by">get it by <b>friday,April 21st</b></p>  </div>
+                                <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/I/41SFtFcHyOL._AC_UL320_SR320,320_.jpg"></div>
+                                <a href="./product9.html">Mamaearth Green Tea Night Cream With Green Tea & Collagen For Open Pores - 50 g</a>
+                                <p>
+                                    <strong>Rs.320.00</strong>
+                                </p>
+                                    <p class="delivery-by">get it by <b>friday,April 21st</b></p>  
+                                </div>
+                            
+
+                
+
+            
+        </div>
+    </div>
+</section>
+<section class="section7">
+    <div class="section-7-container">
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>See personalized recommendations</p>
+        <button>sign in</button>
+        <br>
+        <span>New Customer?<a href="./sign.html">Start Here</a></span>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    </div>
+</section>
+</body>
+<footer>
+    <div class="footer-section-1">
+<spna>Back to top</spna>
+    </div>
+    <div class="footer-section-2">
+<div class="col">
+    <h>Get to know us</h>
+    <ul type="none">
+        <li>About Us</li>
+        <li>Careeers</li>
+        <li>Press Releases</li>
+        <li>Amazon Science</li>
+    </ul>
+</div>
+<div class="col">
+    <h>connect with us</h>
+    <ul type="none">
+        <li>facebook</li>
+        <li>instagram</li>
+        <li>Twitter</li>
+        
+    </ul>
+</div>
+<div class="col">
+    <h>Make money with us</h>
+    <ul type="none">
+        <li>Sell on Amazon</li>
+        <li>Sell under Amazon Accelerator</li>
+        <li>Protect and Build Your Brand</li>
+        <li>Amazon Global Selling</li>
+        <li>Become an Affiliate</li>
+        <li>Fulfilment by Amazon</li>
+        <li>Advertise Your Products</li>
+        <li>Amazon Pay on Merchants</li>
+    </ul>
+</div>
+<div class="col">
+    <h>Let us help you </h>
+    <ul type="none">
+        <li>COVID-19 and Amazon</li>
+        <li>Your Account</li>
+        <li>Returns Centre</li>
+        <li>100% Purchase Protection</li>
+        <li>Amazon App Download</li>
+        <li>Help</li>
+    </ul>
+</div>
+    </div>
+    <div class="footer-section-3">
+    <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads</p>
+    <br>
+       <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+    </div>
+</footer>
+
+</html>
