@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    background-color:#dee0df;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    background-color: rgb(12, 12, 17);
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 50px;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+    transform: scaley(3);
+}
+
+.cart {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    /* justify-content:space-between; */
+    /* background-color:deeppink; */
+}
+
+.cart img {
+    height: 50px;
+    width: 40px;
+}
+
+.cart .write span {
+    height: 50px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+    padding: 3px;
+    font-size: larger;
+
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .search_button .searchbutton{
+    width: 40px;
+    height: 38px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    top: 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: yellow; */
+
+
+
+} 
+
+.searchbar input {
+    padding: 5px 5px 5px 5px;
+    height: 20px;
+    width: 400px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+ .search_button .searchbutton img {
+    width: 51px;
+    height: 28px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    top: -1px;
+    left: 0px;
+
+    /* background-color: rgb(216, 216, 7); */
+     background-size:cover;
+} 
+
+
+
+.write span {
+    color: white;
+}
+/* ......................................................................................................starting with styling of section1 */
+.section-1-container{
+display:flex;
+justify-content:space-between;
+position:relative;
+top:250px;
+margin-left:20px;
+margin-right:20px;
+gap:10px;
+}
+.section-1-column-1{
+background-color:white;
+padding:10px;
+height:400px;
+width:23vw;
+}
+.section-1-column-1 img{
+height:300px;
+width:23vw;
+/* padding:10px; */
+}
+.section-1-column-2{
+background-color:white;
+padding:10px;
+height:400px;
+width:23vw;
+}
+.section-1-column-3{
+background-color:white;
+/* padding:10px; */
+height:419px;
+width:23vw;
+/* font-size:20px; */
+
+
+}
+.section-1-column-3 p{
+font-size:14px;
+}
+
+.section-1-column-4{
+background-color:#dee0df;
+/* padding:10px; */
+height:400px;
+width:23vw;
+}
+.section-1-column-2 img{
+height:300px;
+width:23vw;
+}
+/* .section-1-column-3
+{
+    height:100px;
+    width:25vw;
+    display:grid;
+    background-color:rgb(52, 14, 203);
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    grid-template-columns:auto auto;
+}  */
+.section-1-column-4-row-1{
+    background-color:white;
+    height:130px;
+    width:18vw;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    padding:31px;
+    position:relative;
+    top:-17px;
+
+
+
+}
+button{
+    background-color:#edd035;
+    height:30px;
+    width:250px;
+    border-radius:8px;
+    margin-top:2px;
+    
+}
+.section-1-column-4-row-2{
+    background-color:rgb(35, 28, 171);
+    height:189px;
+    width:23vw;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    
+
+}
+.section-1-column-4-row-2 img{
+height:226px;
+    width:23vw;
+}
+.section-1-column-3 img{
+height:73px;
+width:8vw;
+}
+.images{
+padding:10px;
+display:grid;
+grid-template-columns:auto auto;
+grid-template-rows:auto auto;
+grid-row-gap:10px;
+grid-column-gap:3px;
+}
+.item{
+width:8vw;
+}
+.section1{
+height:auto;
+width:100%;
+background:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/Mar/Apay/Rev1/Deals-PC-3000-Unrec._CB592487741_.jpg");
+display:flex;
+justify-content:center;
+background-size:cover;
+/* align-items:center; */
+animation:slide 20s infinite;
+}
+@keyframes slide{
+35%{
+    
+    height:auto;
+width:100%;
+background:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/Mar/Apay/Rev1/Deals-PC-3000-Unrec._CB592487741_.jpg");
+display:flex;
+justify-content:center;
+background-size:cover;
+}
+70%{
+    height:auto;
+width:100%;
+
+background:url("https://images-eu.ssl-images-amazon.com/images/G/31/saba/Summer_cooling_days_hero_3000_x_1200_Yellow._CB590558342_.jpg");
+display:flex;
+justify-content:center;
+background-size:cover;
+}
+100%{
+    height:auto;
+width:100%;
+
+background:url("https://m.media-amazon.com/images/I/71YEY+JRlKL._SX3000_.jpg");
+display:flex;
+justify-content:center;
+background-size:cover;
+}
+}
+
+/* .......................................................................................................................SECGTION 2 STARTS ........................................ */
+.section2{
+background-color:white;
+position:relative;
+top:276px;
+padding:20px;
+}
+.product-cards{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:20px;
+flex-wrap:nowrap;
+overflow:auto;
+}
+.product-card{
+/* display:inline-block; */
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:rgb(186, 61, 12);
+
+}
+.section2 .product-card img{
+margin:20px;
+height:auto;
+width:auto;
+max-width:280px;
+max-height:150px;
+position:relative;
+right:12px;
+}
+.section2 .section-2-container .product-cards .product-card .redbg{
+background-color:rgb(193, 19, 19);
+color:white;
+border-radius:2px;
+}
+.section2 .section-2-container .product-cards .product-card .deal{
+
+color:red;
+border-radius:2px;
+font-size:10px;
+}
+/* ............................................................................................................................section 3............................................ */
+.section3{
+background-color:white;
+position:relative;
+top:305px;
+padding:20px;
+}
+.product-cards{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:20px;
+flex-wrap:nowrap;
+overflow:auto;
+}
+.product-card{
+display:inline-block;
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:white;
+
+}
+.section3 .product-card img{
+margin:20px;
+height:auto;
+width:auto;
+max-width:280px;
+max-height:200px;
+position:relative;
+right:12px;
+}
+/* .............................section 4 starts........................................ */
+/* ..................................................................................... */
+.section4{
+position:relative;
+top:351px;
+padding:0px 167px;
+}
+/* .........................................................................................................................section 5 starts........................................ */
+.section5{
+background-color:white;
+position:relative;
+top:364px;
+padding:20px;
+}
+.product-cards{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:20px;
+flex-wrap:nowrap;
+overflow:auto;
+}
+.product-card{
+display:inline-block;
+width:300px;
+justify-content:center;
+align-items:center;
+/* flex:0 0 auto; */
+background-color:white;
+
+}
+.section5 .product-card img{
+margin:20px;
+width:auto;
+height:auto;/*always set height and width as auto to get correct aspect ratio or proportion of the image .set the value of maximum height and maximum width..not height and width*/
+max-width:280px;
+max-height:200px;
+position:relative;
+right:12px;
+}
+/* ........................................................................................................................section 6................................................ */
+.section6{
+background-color:white;
+position:relative;
+top:419px;
+display:flex;
+flex-direction:column;
+justify-content: flex-start;
+margin: 20px;
+padding: 20px;
+}
+.section6 .section-6-container .product-cards{
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:20px;
+flex-wrap:nowrap;
+overflow:auto;
+
+}
+.section6 .section-6-container .product-card{
+display:inline-block;
+width:200px;
+flex:0 0 auto;
+flex-direction: column;
+justify-content: center;
+/* gap:4; */
+align-items:center;
+}
+.section6 .section-6-container .product-cards .product-card .product-img img{
+width:100%;
+
+/* justify-content: center; */
+
+}
+.section6 .section-6-container .product-cards .product-card a{
+text-decoration:none;
+color:rgb(41, 144, 167);
+font-size:15px;
+}
+.section6 .section-6-container .product-cards .product-card a:hover{
+color:rgb(201, 68, 68);
+}
+.section6 .section-6-container .product-cards .product-card .delivery-by{
+color:black;
+font-size:12px;
+}
+/* .......................section 7 .................................................... */
+.section7 .section-7-container{
+background-color:white;
+position:relative;
+top:431px;
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+padding:20px;
+
+}
+/* .............................footer.................................................. */
+/* footer{
+width:100%;
+background-color:rgb(4, 4, 32);
+height:80px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+position: relative;
+top:450px;
+color:white;
+
+
+
+} */
+footer{
+display:flex;
+flex-direction:column;
+position:relative;
+top:431px;
+}
+.footer-section-1{
+width:100%;
+height:50px;
+background-color:rgb(40, 40, 65);
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+.footer-section-1:hover{
+background-color:rgb(82, 87, 122);
+}
+.footer-section-2{
+width:100%;
+height:270px;
+/* max-height:400px; */
+display:flex;
+gap:40px;
+background-color:rgb(25, 25, 55);
+color:white;
+justify-content: center;
+align-items: center;
+}
+.footer-section-2 li{
+font-size: 13px;
+color:rgb(163, 163, 163);
+text-decoration: none;
+}
+.footer-section-3{
+width:100%;
+background-color:rgb(17, 17, 34);
+height:80px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+/* position: relative;
+top:450px; */
+color:white;
+
+}
+.footer-section-2 .col{
+width:235px;
+height:215px;
+}
+.footer-section-2 h{
+font-size:16px;
+}
