@@ -77,3 +77,12 @@ screenshots of the website
 
 
 <img width="947" alt="ss6_amazon_clone" src="https://user-images.githubusercontent.com/116806069/233758047-6e9b8d12-24f5-4110-8f54-ba272101024f.png">
+
+
+
+
+7th screenshot
+
+
+
+<img width="960" alt="ss7_amazon_clone" src="https://user-images.githubusercontent.com/116806069/233760033-88543bc7-d13f-4251-a958-de4e96e42d73.png">
