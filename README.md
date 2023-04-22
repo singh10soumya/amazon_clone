@@ -1,6 +1,8 @@
 # amazon_clone
 amazon-clone made using HTML and CSS
 screenshots of the website
+
+
 1st screenshot
 
 
@@ -9,7 +11,11 @@ screenshots of the website
 
 
 
+
+
 2nd screenshot 
+
+
 
 
 
@@ -19,7 +25,11 @@ screenshots of the website
 
 
 
+
+
 3rd screenshot
+
+
 
 
 
@@ -27,7 +37,12 @@ screenshots of the website
 
 
 
+
+
 4th screenshot
+
+
+
 
 
 
@@ -36,7 +51,13 @@ screenshots of the website
 
 
 
+
+
+
 5th screenshot
+
+
+
 
 
 
@@ -44,7 +65,14 @@ screenshots of the website
 
 
 
+
+
+
+
 6th screenshot
+
+
+
 
 
 
